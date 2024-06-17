@@ -82,7 +82,65 @@ SELECT *
 FROM tableName
 WHERE condition;
 
+```
+
+## SQL Operators
+### The WHERE clause uses operators to construct conditions. Some of the commonly used operators are:
+
+#### 1. Equal to Operator (=)
 ``` 
+-- select all columns from Customers table with first name 'John'
+SELECT *
+FROM Customers
+WHERE first_name = 'John';
+``` 
+#### 2. Greater than (>)
+``` 
+-- select all columns from Customers table with age greater than 25
+SELECT *
+FROM Customers
+WHERE age > 25;
+``` 
+
+#### 3. AND Operator (AND)
+
+```
+-- select all columns from Customers table with last_name 'Doe' and country 'USA'
+SELECT *
+FROM Customers
+WHERE last_name = 'Doe' AND country = 'USA';
+
+```
+
+#### 4 .SQL OR Operator
+``` 
+-- select first and last name of customers
+-- who either live in the USA
+-- or have the last name 'Doe'
+
+SELECT first_name, last_name
+FROM Customers
+WHERE country = 'USA' OR last_name = 'Doe';
+``` 
+#### 5 .SQL NOT Operator
+``` 
+-- select customers who don't live in the USA
+
+SELECT first_name, last_name
+FROM Customers
+WHERE NOT country = 'USA';
+``` 
+
+#### Combining Multiple Operators
+
+```
+-- select customers who live in either USA or UK and whose age is less than 26
+
+SELECT *
+FROM Customers
+WHERE (country = 'USA' OR country = 'UK') AND age < 26;
+
+```
 
 #### To Create an Index
 ```
