@@ -1,5 +1,6 @@
 
 # MySQL Commands
+## DataBase
 #### To Create a Database
 ``` 
 CREATE DATABASE dbName; 
@@ -9,7 +10,7 @@ CREATE DATABASE dbName;
 ```
 DROP DATABASE dbName;
 ```
-
+## Table
 #### To Create a Table
 ```
 CREATE TABLE tableName (
@@ -62,6 +63,26 @@ ADD columnName datatype;
 ALTER TABLE tableName
 DROP COLUMN columnName;
 ```
+
+## SELECT
+#### To select a column from a database table
+``` 
+SELECT column1, column2, ...
+FROM table;
+``` 
+#### To select all columns from a database table
+``` 
+SELECT *
+FROM tableName;
+``` 
+
+#### SQL SELECT WHERE Clause
+```
+SELECT *
+FROM tableName
+WHERE condition;
+
+``` 
 
 #### To Create an Index
 ```
